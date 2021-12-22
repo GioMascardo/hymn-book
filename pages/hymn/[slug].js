@@ -7,7 +7,7 @@ function SingleHymn({ hymn: { hymn } }) {
   } = hymn;
 
   return (
-    <div className="flex flex-col min-h-screen min-w-full bg-primary-900 items-center text-purple-50 p-8">
+    <div className="flex flex-col min-h-screen min-w-full bg-primary-900 items-center text-purple-50 py-8 px-4">
       <header className=" container md:max-w-screen-sm justify-start mb-4">
         <a href=".././">
           <svg
@@ -36,7 +36,6 @@ function SingleHymn({ hymn: { hymn } }) {
         className="max-w-screen-sm"
         dangerouslySetInnerHTML={{ __html: lyrics }}
       />
-      ;
     </div>
   );
 }
