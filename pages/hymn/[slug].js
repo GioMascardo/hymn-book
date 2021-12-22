@@ -8,13 +8,29 @@ function SingleHymn({ hymn: { hymn } }) {
 
   return (
     <div className="flex flex-col min-h-screen min-w-full bg-primary-900 items-center text-purple-50 p-8">
+      <header className=" container md:max-w-screen-sm justify-start mb-4">
+        <a href=".././">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 fill-primary-50"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+        </a>
+      </header>
       <div
-        className="flex items-start justify-center min-h-[10vh] pt-8"
-        id="header"
+        className="flex items-center justify-start min-h-[10vh] max-w-screen-sm w-full"
+        id="title"
       >
-        <h1 className="text-center font-bold text-3xl text-primary-50">
-          {hymnName}
-        </h1>
+        <h1 className="font-bold text-3xl text-purple-50">{hymnName}</h1>
       </div>
       <div
         className="max-w-screen-sm"
