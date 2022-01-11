@@ -27,7 +27,7 @@ function SingleHymn({ hymn: { hymn } }) {
         </a>
       </header>
       <div
-        className="flex items-center justify-start min-h-[10vh] max-w-screen-sm w-full"
+        className="flex items-center justify-start md:justify-center min-h-[10vh] max-w-screen-sm w-full"
         id="title"
       >
         <h1 className="font-bold text-3xl text-purple-50">{hymnName}</h1>
@@ -62,7 +62,7 @@ export async function getStaticPaths() {
     },
   }));
   console.log();
-  return { paths: paths, fallback: false };
+  return { paths: paths, fallback: "blocking" };
 }
 
 export async function getStaticProps({ params }) {
