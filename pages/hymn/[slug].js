@@ -86,5 +86,6 @@ export async function getStaticProps({ params }) {
     props: {
       hymn,
     },
+    revalidate: 3600,
   };
 }
