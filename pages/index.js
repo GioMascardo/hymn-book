@@ -102,5 +102,6 @@ export async function getStaticProps() {
       hymnsByName,
       hymnsByNumber,
     },
+    revalidate: 3600,
   };
 }
